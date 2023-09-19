@@ -1,0 +1,33 @@
+h1 {
+    font-family: cursive;
+     text-align: center;
+}
+section, .mat-form-field {
+    text-align: center;
+    border-radius: 5vh;
+    background-color: grayscale($color: #ff8383);
+    width:100%;
+    justify-content: center;
+}
+label, input {
+    margin-top:0.5vh;
+    margin-bottom:0.5vh;
+    text-align: center;
+    width:100%
+}
+
+button{
+    margin:0.5vh; 
+    background-color: rgb(43, 98, 226);
+    color: white; 
+    border-color: rgb(165, 162, 255);
+    border-radius: 70vh; 
+    height:4vh; 
+    width:9vh; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+    justify-content: flex;
+    flex-direction: column;
+}

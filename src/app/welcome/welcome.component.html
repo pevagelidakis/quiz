@@ -1,1 +1,21 @@
-<p>welcome works!</p>
+<div class="container bg-light py-5">
+    <h1 class="display-5 fw-bold">Welcome to {{title}}</h1>
+    <p class="col-md-8 fs-4">This quiz will contains total 20 questions. Each question holds 5 Points</p>
+    <h4>Rules:</h4>
+    <ol>
+        <li>Correct answer gives you 5 points</li>
+        <li>Incorrect answer gives you -1.66 points</li>
+        <li>You will have 3 minutes (180 seconds) to answer each question</li>
+        <li>Refreshing the page will reset the quiz</li>
+    </ol>
+    <h1>All the best!</h1>
+    <section>
+        <form class="example-form">
+            <mat-form-field class="name">
+                <mat-label matNativeControl for="name" >Name</mat-label>
+                <input matInput matNativeControl type="text"><br>
+                <!-- <button mat-raised-button routerLink="/question">Let's Start</button> -->
+            </mat-form-field>
+        </form>
+    </section>
+</div>
