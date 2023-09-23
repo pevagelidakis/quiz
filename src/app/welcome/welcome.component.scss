@@ -1,33 +1,44 @@
-h1 {
+* {
     font-family: cursive;
      text-align: center;
+     justify-content: center
 }
-section, .mat-form-field {
-    text-align: center;
-    border-radius: 5vh;
-    background-color: grayscale($color: #ff8383);
-    width:100%;
-    justify-content: center;
-}
-label, input {
-    margin-top:0.5vh;
-    margin-bottom:0.5vh;
+
+h1{
     text-align: center;
     width:100%
 }
+h4,li{
+    text-align: start;
+    justify-content: start;
+}
+section {
+    border-radius: 5vh;
+    background-color: grayscale($color: #ff8383);
+    height: auto;
+    display: grid;
+    justify-content: center;
+    text-align: center  ;
+}
+label, input {
+    display: center;
+    margin-top:0.5vh;
+    width:200px;
+    margin-bottom:1vh;
+}
 
 button{
-    margin:0.5vh; 
     background-color: rgb(43, 98, 226);
     color: white; 
     border-color: rgb(165, 162, 255);
-    border-radius: 70vh; 
     height:4vh; 
-    width:9vh; 
+    width:50%; 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: width 2s, height 2s, transform 2s;
+
 }
 
 form {
-    justify-content: flex;
-    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }

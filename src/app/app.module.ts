@@ -10,9 +10,11 @@ import {MatButtonModule} from '@angular/material/button'
 import {MatInputModule} from '@angular/material/input'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
+    WelcomeComponent,
     AppComponent,
     QuestionComponent,
     HeaderComponent
@@ -20,13 +22,8 @@ import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/materi
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
-  ],
-  providers: [
-    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
   ],
   bootstrap: [AppComponent]
 })

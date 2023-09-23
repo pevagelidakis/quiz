@@ -9,5 +9,5 @@ import { WelcomeComponent } from '../welcome/welcome.component';
 })
 export class QuestionComponent {
   title = new AppComponent().title
-  name = new WelcomeComponent().name
+  name = new WelcomeComponent().data.value.username
 }

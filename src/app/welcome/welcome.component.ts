@@ -1,23 +1,28 @@
 import { Component } from '@angular/core';
 import { AppComponent } from '../app.component';
-import { MatInputModule } from '@angular/material/input';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatFormFieldControl,MatFormFieldModule } from '@angular/material/form-field';
-import {FormGroup, FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {NgIf} from '@angular/common';
+import {FormControl, FormGroup} from '@angular/forms';
 import { Validators} from '@angular/forms';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.scss'],
-  standalone: true,
-  imports: [FormsModule, MatDividerModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule, NgIf],
 })
 
 export class WelcomeComponent {
+  name = ""
   title = new AppComponent().title;
-  name = new FormControl('',Validators.required)
+  data = new FormGroup({
+    username: new FormControl('',Validators.required),
+    password: new FormControl('',Validators.required)
+  })
+  constructor(){}
+
+  onStart(){
+    this.name = this.data.value.username? this.data.value.username: ""
+  }
+  
   
 
 

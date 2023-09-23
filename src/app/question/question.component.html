@@ -1,13 +1,46 @@
-<div class="container">
+<div class="container mt-5">
     <div class="card">
-        <div class="d-flex justify-content-between p-3">
+        <div class="d-flex justify-content-between p-3" width="100%">
             <div class="image">
                 <img src="../../assets/images/data-science-lg.png" alt="ds" width="40vh">
             </div>
             <div class="quiz-header">
                 <h4>{{title}}</h4>
-                <span> Welcome {{name}}</span>
+                <span>Welcome {{name}}!</span>
             </div>
+        </div>
+        <div class="d-flex justify-content-around py-3">
+            <div class="score">
+                <h5>5 Points</h5>
+            </div>
+            <div class="question-remain">
+                <span style="font-style: italic;">Question 1 of 20</span>
+            </div>
+            <div class="timer">
+                <h5>180 sec<svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 24 24" id="timer"><path d="M18.3,8.59l.91-.9a1,1,0,0,0-1.42-1.42l-.9.91a8,8,0,0,0-9.79,0l-.91-.92A1,1,0,0,0,4.77,7.69l.92.91A7.92,7.92,0,0,0,4,13.5,8,8,0,1,0,18.3,8.59ZM12,19.5a6,6,0,1,1,6-6A6,6,0,0,1,12,19.5Zm-2-15h4a1,1,0,0,0,0-2H10a1,1,0,0,0,0,2Zm3,6a1,1,0,0,0-2,0v1.89a1.5,1.5,0,1,0,2,0Z"></path></svg></h5>
+            </div>                
+        </div>
+        <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="questions">
+            <div class="card">
+                <h3>What's your name?</h3>
+            </div>
+            
+        </div>
+        <div class="options">
+            <ol>
+                <li><div class="card">Panos</div></li>
+                <li><div class="card">Pavlos</div></li>
+                <li><div class="card">Manos</div></li>
+                <li><div class="card">Danos</div></li>
+            </ol>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button class="btn"><i class="fa text-primary fa-chevron-left fa-3x" aria-hidden="true"></i></button>
+            <button class="btn"><i class="fa text-primary fa-refresh fa-3x" aria-hidden="true"></i></button>
+            <button class="btn"><i class="fa text-primary fa-chevron-right fa-3x" aria-hidden="true"></i></button>
         </div>
     </div>
 </div>

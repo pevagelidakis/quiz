@@ -8,14 +8,17 @@
         <li>You will have 3 minutes (180 seconds) to answer each question</li>
         <li>Refreshing the page will reset the quiz</li>
     </ol>
-    <h1>All the best!</h1>
-    <section>
-        <form class="example-form">
-            <mat-form-field class="name">
-                <mat-label matNativeControl for="name" >Name</mat-label>
-                <input matInput matNativeControl type="text"><br>
-                <!-- <button mat-raised-button routerLink="/question">Let's Start</button> -->
-            </mat-form-field>
+    <h2>All the best!</h2>
+    <section class="col-s-8">
+        <form [formGroup]= "data">
+            <div class="form-group col-md-4 my-3">
+                <label for="name" >Username</label><br>
+                <input id="name" type="text" class="form-control" formControlName="username" required minlength="5">
+
+                <label for="password" >Password</label><br>
+                <input id="password" type="password" class="form-control" formControlName="password" required minlength="5">
+            </div>
         </form>
+        <button class = "btn btn-primary col-md-4" routerLink="/question" *ngIf="data.valid" (onclick)="onStart()">Let's Start the quiz</button>
     </section>
 </div>
